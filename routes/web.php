@@ -15,34 +15,41 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-// Route::get('login', function () {
-//     return view('pages.login');
-// });
 
-Route::prefix('admin/')->middleware('auth_admin')->name('admin.')->group(function(){
-Route::get('login',[LoginController::class,'index'])->name('login')->defaults('guard','admin');
-Route::post('login',[LoginController::class,'login'])->name('login.submit')->defaults('guard','admin');
 
-Route::get('dashboard', function(){
-    return view('admin.dashboard');
-})->name('dashboard');
+// Admin login 
+
+Route::prefix('admin')->name('admin.')->group(function () {
+    Route::get('login', [LoginController::class, 'index'])->name('login')->defaults('guard', 'admin');
+    Route::post('login', [LoginController::class, 'login'])->name('login.submit')->defaults('guard', 'admin');
 });
 
-Route::prefix('freelancer/')->middleware('auth_freelancer')->name('freelancer.')->group(function () {
+Route::prefix('admin')->middleware('auth:admin')->name('admin.')->group(function () {
+    Route::get('dashboard', function () {
+        return view('admin.dashboard');
+    })->name('dashboard');
+});
+
+
+// Freelancer login 
+
+Route::prefix('freelancer')->name('freelancer.')->group(function () {
     Route::get('login', [LoginController::class, 'index'])->name('login')->defaults('guard', 'freelancer');
     Route::post('login', [LoginController::class, 'login'])->name('login.submit')->defaults('guard', 'freelancer');
+});
 
+Route::prefix('freelancer')->middleware('auth:freelancer')->name('freelancer.')->group(function () {
     Route::get('dashboard', function () {
         return view('freelancer.dashboard');
     })->name('dashboard');
 });
+
+
+// Web user login
 
 Route::get('login', [LoginController::class, 'index'])->name('web.login')->defaults('guard', 'web');
 Route::post('login', [LoginController::class, 'login'])->name('web.login.submit')->defaults('guard', 'web');
 
 Route::get('dashboard', function () {
     return "Hiiii";
-})->middleware('auth_user')->name('web.dashboard');
+})->middleware('auth:web')->name('web.dashboard');
