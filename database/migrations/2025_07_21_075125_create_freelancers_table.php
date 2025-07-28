@@ -14,9 +14,12 @@ return new class extends Migration
         Schema::create('freelancers', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
+            $table->string('email')->unique();        
             $table->string('password');
+            $table->string('verification_token',100)->nullable()->unique();
+            $table->timestamp('verification_token_sent_at')->nullable();
+            $table->timestamp('email_verified_at')->nullable();
+
             $table->timestamps();
         });
     }
@@ -27,5 +30,6 @@ return new class extends Migration
     public function down(): void
     {
         Schema::dropIfExists('freelancers');
+       
     }
 };

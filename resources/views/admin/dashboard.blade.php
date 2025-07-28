@@ -1,4 +1,5 @@
-@extends('dashboard.master')
+@extends('layout.master')
+@section('title', 'Dashboard')
 @section('content')
 hi Admin
 @endsection

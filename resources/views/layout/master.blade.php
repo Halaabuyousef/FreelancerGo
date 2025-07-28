@@ -28,7 +28,7 @@
     <link href="{{asset('assets/css/semi-dark.css')}}" rel="stylesheet" />
     <link href="{{asset('assets/css/header-colors.css')}}" rel="stylesheet" />
 
-    <title>Snacked - Bootstrap 5 Admin Template</title>
+    <title>@yield('title')</title>
 </head>
 
 <body>
