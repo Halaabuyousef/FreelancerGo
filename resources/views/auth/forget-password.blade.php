@@ -35,7 +35,9 @@
 
         <div class="links-container">
             <a href="{{ route($guard.'.indexLogin') }}"><i class="fas fa-arrow-left"></i> العودة لتسجيل الدخول</a>
-            <a href="{{ route($guard.'.register') }}"><i class="fas fa-user-plus"></i> إنشاء حساب جديد</a>
+            @if ($guard != 'admin')
+            ليس لديك حساب؟ <a href="{{ route($guard.'.register') }}">إنشاء حساب جديد</a>
+            @endif
         </div>
     </div>
 </section>

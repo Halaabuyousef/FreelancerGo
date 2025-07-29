@@ -20,4 +20,6 @@ class Freelancer extends Authenticatable implements CanResetPasswordContract
     {
         $this->notify(new ResetPasswordNotification($token, 'freelancer'));
     }
+
+  
 }
