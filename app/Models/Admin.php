@@ -9,13 +9,20 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
 use App\Notifications\ResetPasswordNotification;
 use Illuminate\Notifications\Notifiable;
+use Spatie\Permission\Traits\HasRoles;
+
 class Admin extends Authenticatable implements CanResetPasswordContract
 {
-    use HasFactory , CanResetPassword, Notifiable;
+    use HasFactory , CanResetPassword, Notifiable , HasRoles;
     protected $guarded = [];
 
     public function sendPasswordResetNotification($token)
     {
         $this->notify(new ResetPasswordNotification($token, 'admin'));
+    }
+
+    function role()
+    {
+        return $this->belongsTo(Role::class)->withDefault();
     }
 }

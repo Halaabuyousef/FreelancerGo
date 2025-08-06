@@ -1,318 +1,66 @@
- <!--start sidebar -->
- <aside class="sidebar-wrapper" data-simplebar="true">
-     <div class="sidebar-header">
-         <div>
-             <img src="{{asset('assets/images/logo-icon.png')}}" class="logo-icon" alt="logo icon">
-         </div>
-         <div>
-             <h4 class="logo-text">Snacked</h4>
-         </div>
-         <div class="toggle-icon ms-auto"> <i class="bi bi-list"></i>
-         </div>
-     </div>
-     <!--navigation-->
-     <ul class="metismenu" id="menu">
-         <li>
-             <a href="{{asset('javascript:;')}}" class="has-arrow">
-                 <div class="parent-icon"><i class="bi bi-house-fill"></i>
-                 </div>
-                 <div class="menu-title">Dashboard</div>
-             </a>
-             <ul>
-                 <li> <a href="{{asset('index.html')}}"><i class="bi bi-circle"></i>Blue Dashboard</a>
-                 </li>
-                 <li> <a href="{{asset('index2.html')}}"><i class="bi bi-circle"></i>Color Dashboard</a>
-                 </li>
-             </ul>
-         </li>
-         <li>
-             <a href="{{asset('javascript:;')}}" class="has-arrow">
-                 <div class="parent-icon"><i class="bi bi-grid-fill"></i>
-                 </div>
-                 <div class="menu-title">Application</div>
-             </a>
-             <ul>
-                 <li> <a href="{{asset('app-emailbox.html')}}"><i class="bi bi-circle"></i>Email</a>
-                 </li>
-                 <li> <a href="{{asset('app-chat-box.html')}}"><i class="bi bi-circle"></i>Chat Box</a>
-                 </li>
-                 <li> <a href="{{asset('app-file-manager.html')}}"><i class="bi bi-circle"></i>File Manager</a>
-                 </li>
-                 <li> <a href="{{asset('app-to-do.html')}}"><i class="bi bi-circle"></i>Todo List</a>
-                 </li>
-                 <li> <a href="{{asset('app-invoice.html')}}"><i class="bi bi-circle"></i>Invoice</a>
-                 </li>
-                 <li> <a href="{{asset('app-fullcalender.html')}}"><i class="bi bi-circle"></i>Calendar</a>
-                 </li>
-             </ul>
-         </li>
-         <li class="menu-label">UI Elements</li>
-         <li>
-             <a href="{{asset('javascript:;')}}" class="has-arrow">
-                 <div class="parent-icon"><i class="bi bi-droplet-fill"></i>
-                 </div>
-                 <div class="menu-title">Widgets</div>
-             </a>
-             <ul>
-                 <li> <a href="{{asset('widgets-static-widgets.html')}}"><i class="bi bi-circle"></i>Static Widgets</a>
-                 </li>
-                 <li> <a href="{{asset('widgets-data-widgets.html')}}"><i class="bi bi-circle"></i>Data Widgets</a>
-                 </li>
-             </ul>
-         </li>
-         <li>
-             <a href="{{asset('javascript:;')}}" class="has-arrow">
-                 <div class="parent-icon"><i class="bi bi-basket2-fill"></i>
-                 </div>
-                 <div class="menu-title">eCommerce</div>
-             </a>
-             <ul>
-                 <li> <a href="{{asset('ecommerce-products-list.html')}}"><i class="bi bi-circle"></i>Products List</a>
-                 </li>
-                 <li> <a href="{{asset('ecommerce-products-grid.html')}}"><i class="bi bi-circle"></i>Products Grid</a>
-                 </li>
-                 <li> <a href="{{asset('ecommerce-products-categories.html')}}"><i class="bi bi-circle"></i>Categories</a>
-                 </li>
-                 <li> <a href="{{asset('ecommerce-orders.html')}}"><i class="bi bi-circle"></i>Orders</a>
-                 </li>
-                 <li> <a href="{{asset('ecommerce-orders-detail.html')}}"><i class="bi bi-circle"></i>Order details</a>
-                 </li>
-                 <li> <a href="{{asset('ecommerce-add-new-product.html')}}"><i class="bi bi-circle"></i>Add New Product</a>
-                 </li>
-                 <li> <a href="{{asset('ecommerce-add-new-product-2.html')}}"><i class="bi bi-circle"></i>Add New Product 2</a>
-                 </li>
-                 <li> <a href="{{asset('ecommerce-transactions.html')}}"><i class="bi bi-circle"></i>Transactions</a>
-                 </li>
-             </ul>
-         </li>
-         <li>
-             <a class="has-arrow" href="{{asset('javascript:;')}}">
-                 <div class="parent-icon"><i class="bi bi-award-fill"></i>
-                 </div>
-                 <div class="menu-title">Components</div>
-             </a>
-             <ul>
-                 <li> <a href="{{asset('component-alerts.html')}}"><i class="bi bi-circle"></i>Alerts</a>
-                 </li>
-                 <li> <a href="{{asset('component-accordions.html')}}"><i class="bi bi-circle"></i>Accordions</a>
-                 </li>
-                 <li> <a href="{{asset('component-badges.html')}}"><i class="bi bi-circle"></i>Badges</a>
-                 </li>
-                 <li> <a href="{{asset('component-buttons.html')}}"><i class="bi bi-circle"></i>Buttons</a>
-                 </li>
-                 <li> <a href="{{asset('component-cards.html')}}"><i class="bi bi-circle"></i>Cards</a>
-                 </li>
-                 <li> <a href="{{asset('component-carousels.html')}}"><i class="bi bi-circle"></i>Carousels</a>
-                 </li>
-                 <li> <a href="{{asset('component-list-groups.html')}}"><i class="bi bi-circle"></i>List Groups</a>
-                 </li>
-                 <li> <a href="{{asset('component-media-object.html')}}"><i class="bi bi-circle"></i>Media Objects</a>
-                 </li>
-                 <li> <a href="{{asset('component-modals.html')}}"><i class="bi bi-circle"></i>Modals</a>
-                 </li>
-                 <li> <a href="{{asset('component-navs-tabs.html')}}"><i class="bi bi-circle"></i>Navs & Tabs</a>
-                 </li>
-                 <li> <a href="{{asset('component-navbar.html')}}"><i class="bi bi-circle"></i>Navbar</a>
-                 </li>
-                 <li> <a href="{{asset('component-paginations.html')}}"><i class="bi bi-circle"></i>Pagination</a>
-                 </li>
-                 <li> <a href="{{asset('component-popovers-tooltips.html')}}"><i class="bi bi-circle"></i>Popovers & Tooltips</a>
-                 </li>
-                 <li> <a href="{{asset('component-progress-bars.html')}}"><i class="bi bi-circle"></i>Progress</a>
-                 </li>
-                 <li> <a href="{{asset('component-spinners.html')}}"><i class="bi bi-circle"></i>Spinners</a>
-                 </li>
-                 <li> <a href="{{asset('component-notifications.html')}}"><i class="bi bi-circle"></i>Notifications</a>
-                 </li>
-                 <li> <a href="{{asset('component-avtars-chips.html')}}"><i class="bi bi-circle"></i>Avatrs & Chips</a>
-                 </li>
-             </ul>
-         </li>
-         <li>
-             <a class="has-arrow" href="{{asset('javascript:;')}}">
-                 <div class="parent-icon"><i class="bi bi-cloud-arrow-down-fill"></i>
-                 </div>
-                 <div class="menu-title">Icons</div>
-             </a>
-             <ul>
-                 <li> <a href="{{asset('icons-line-icons.html')}}"><i class="bi bi-circle"></i>Line Icons</a>
-                 </li>
-                 <li> <a href="{{asset('icons-boxicons.html')}}"><i class="bi bi-circle"></i>Boxicons</a>
-                 </li>
-                 <li> <a href="{{asset('icons-feather-icons.html')}}"><i class="bi bi-circle"></i>Feather Icons</a>
-                 </li>
-             </ul>
-         </li>
-         <li class="menu-label">Forms & Tables</li>
-         <li>
-             <a class="has-arrow" href="{{asset('javascript:;')}}">
-                 <div class="parent-icon"><i class="bi bi-file-earmark-break-fill"></i>
-                 </div>
-                 <div class="menu-title">Forms</div>
-             </a>
-             <ul>
-                 <li> <a href="{{asset('form-elements.html')}}"><i class="bi bi-circle"></i>Form Elements</a>
-                 </li>
-                 <li> <a href="{{asset('form-input-group.html')}}"><i class="bi bi-circle"></i>Input Groups</a>
-                 </li>
-                 <li> <a href="{{asset('form-layouts.html')}}"><i class="bi bi-circle"></i>Forms Layouts</a>
-                 </li>
-                 <li> <a href="{{asset('form-validations.html')}}"><i class="bi bi-circle"></i>Form Validation</a>
-                 </li>
-                 <li> <a href="{{asset('form-wizard.html')}}"><i class="bi bi-circle"></i>Form Wizard</a>
-                 </li>
-                 <li> <a href="{{asset('form-date-time-pickes.html')}}"><i class="bi bi-circle"></i>Date Pickers</a>
-                 </li>
-                 <li> <a href="{{asset('form-select2.html')}}"><i class="bi bi-circle"></i>Select2</a>
-                 </li>
-             </ul>
-         </li>
-         <li>
-             <a class="has-arrow" href="{{asset('javascript:;')}}">
-                 <div class="parent-icon"><i class="bi bi-file-earmark-spreadsheet-fill"></i>
-                 </div>
-                 <div class="menu-title">Tables</div>
-             </a>
-             <ul>
-                 <li> <a href="{{asset('table-basic-table.html')}}"><i class="bi bi-circle"></i>Basic Table</a>
-                 </li>
-                 <li> <a href="{{asset('table-advance-tables.html')}}"><i class="bi bi-circle"></i>Advance Tables</a>
-                 </li>
-                 <li> <a href="{{asset('table-datatable.html')}}"><i class="bi bi-circle"></i>Data Table</a>
-                 </li>
-             </ul>
-         </li>
-         <li class="menu-label">Pages</li>
-         <li>
-             <a class="has-arrow" href="{{asset('javascript:;')}}">
-                 <div class="parent-icon"><i class="bi bi-lock-fill"></i>
-                 </div>
-                 <div class="menu-title">Authentication</div>
-             </a>
-             <ul>
-                 <li> <a href="{{asset('authentication-signin.html')}}" target="_blank"><i class="bi bi-circle"></i>Sign In</a>
-                 </li>
-                 <li> <a href="{{asset('authentication-signup.html')}}" target="_blank"><i class="bi bi-circle"></i>Sign Up</a>
-                 </li>
-                 <li> <a href="{{asset('authentication-signin-with-header-footer.html')}}" target="_blank"><i class="bi bi-circle"></i>Sign In with Header & Footer</a>
-                 </li>
-                 <li> <a href="{{asset('authentication-signup-with-header-footer.html')}}" target="_blank"><i class="bi bi-circle"></i>Sign Up with Header & Footer</a>
-                 </li>
-                 <li> <a href="{{asset('authentication-forgot-password.html')}}" target="_blank"><i class="bi bi-circle"></i>Forgot Password</a>
-                 </li>
-                 <li> <a href="{{asset('authentication-reset-password.html')}}" target="_blank"><i class="bi bi-circle"></i>Reset Password</a>
-                 </li>
-             </ul>
-         </li>
-         <li>
-             <a href="{{asset('pages-user-profile.html')}}">
-                 <div class="parent-icon"><i class="bi bi-person-lines-fill"></i>
-                 </div>
-                 <div class="menu-title">User Profile</div>
-             </a>
-         </li>
-         <li>
-             <a href="{{asset('pages-timeline.html')}}">
-                 <div class="parent-icon"><i class="bi bi-collection-play-fill"></i>
-                 </div>
-                 <div class="menu-title">Timeline</div>
-             </a>
-         </li>
-         <li>
-             <a class="has-arrow" href="{{asset('javascript:;')}}">
-                 <div class="parent-icon"><i class="bi bi-exclamation-triangle-fill"></i>
-                 </div>
-                 <div class="menu-title">Errors</div>
-             </a>
-             <ul>
-                 <li> <a href="{{asset('pages-errors-404-error.html')}}" target="_blank"><i class="bi bi-circle"></i>404 Error</a>
-                 </li>
-                 <li> <a href="{{asset('pages-errors-500-error.html')}}" target="_blank"><i class="bi bi-circle"></i>500 Error</a>
-                 </li>
-                 <li> <a href="{{asset('pages-errors-coming-soon.html')}}" target="_blank"><i class="bi bi-circle"></i>Coming Soon</a>
-                 </li>
-                 <li> <a href="{{asset('pages-blank-page.html')}}" target="_blank"><i class="bi bi-circle"></i>Blank Page</a>
-                 </li>
-             </ul>
-         </li>
-         <li>
-             <a href="{{asset('pages-faq.html')}}">
-                 <div class="parent-icon"><i class="bi bi-question-lg"></i>
-                 </div>
-                 <div class="menu-title">FAQ</div>
-             </a>
-         </li>
-         <li>
-             <a href="{{asset('pages-pricing-tables.html')}}">
-                 <div class="parent-icon"><i class="bi bi-tags-fill"></i>
-                 </div>
-                 <div class="menu-title">Pricing Tables</div>
-             </a>
-         </li>
-         <li class="menu-label">Charts & Maps</li>
-         <li>
-             <a class="has-arrow" href="{{asset('javascript:;')}}">
-                 <div class="parent-icon"><i class="bi bi-bar-chart-line-fill"></i>
-                 </div>
-                 <div class="menu-title">Charts</div>
-             </a>
-             <ul>
-                 <li> <a href="{{asset('charts-apex-chart.html')}}"><i class="bi bi-circle"></i>Apex</a>
-                 </li>
-                 <li> <a href="{{asset('charts-chartjs.html')}}"><i class="bi bi-circle"></i>Chartjs</a>
-                 </li>
-                 <li> <a href="{{asset('charts-highcharts.html')}}"><i class="bi bi-circle"></i>Highcharts</a>
-                 </li>
-             </ul>
-         </li>
-         <li>
-             <a class="has-arrow" href="{{asset('javascript:;')}}">
-                 <div class="parent-icon"><i class="bi bi-pin-map-fill"></i>
-                 </div>
-                 <div class="menu-title">Maps</div>
-             </a>
-             <ul>
-                 <li> <a href="{{asset('map-google-maps.html')}}"><i class="bi bi-circle"></i>Google Maps</a>
-                 </li>
-                 <li> <a href="{{asset('map-vector-maps.html')}}"><i class="bi bi-circle"></i>Vector Maps</a>
-                 </li>
-             </ul>
-         </li>
-         <li class="menu-label">Others</li>
-         <li>
-             <a class="has-arrow" href="{{asset('javascript:;')}}">
-                 <div class="parent-icon"><i class="bi bi-music-note-list"></i>
-                 </div>
-                 <div class="menu-title">Menu Levels</div>
-             </a>
-             <ul>
-                 <li> <a class="has-arrow" href="{{asset('javascript:;')}}"><i class="bi bi-circle"></i>Level One</a>
-                     <ul>
-                         <li> <a class="has-arrow" href="{{asset('javascript:;')}}"><i class="bi bi-circle"></i>Level Two</a>
-                             <ul>
-                                 <li> <a href="{{asset('javascript:;')}}"><i class="bi bi-circle"></i>Level Three</a>
-                                 </li>
-                             </ul>
+ <!-- begin:: Aside Menu -->
+ <div class="kt-aside-menu-wrapper kt-grid__item kt-grid__item--fluid" id="kt_aside_menu_wrapper">
+     <div id="kt_aside_menu" class="kt-aside-menu " data-ktmenu-vertical="1" data-ktmenu-scroll="1" data-ktmenu-dropdown-timeout="500">
+         <ul class="kt-menu__nav ">
+             <li class="kt-menu__item  kt-menu__item--active" aria-haspopup="true"><a href={{asset('index.html')}} class="kt-menu__link "><span class="kt-menu__link-icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
+                             <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                 <polygon points="0 0 24 0 24 24 0 24" />
+                                 <path d="M12.9336061,16.072447 L19.36,10.9564761 L19.5181585,10.8312381 C20.1676248,10.3169571 20.2772143,9.3735535 19.7629333,8.72408713 C19.6917232,8.63415859 19.6104327,8.55269514 19.5206557,8.48129411 L12.9336854,3.24257445 C12.3871201,2.80788259 11.6128799,2.80788259 11.0663146,3.24257445 L4.47482784,8.48488609 C3.82645598,9.00054628 3.71887192,9.94418071 4.23453211,10.5925526 C4.30500305,10.6811601 4.38527899,10.7615046 4.47382636,10.8320511 L4.63,10.9564761 L11.0659024,16.0730648 C11.6126744,16.5077525 12.3871218,16.5074963 12.9336061,16.072447 Z" fill="#000000" fill-rule="nonzero" />
+                                 <path d="M11.0563554,18.6706981 L5.33593024,14.122919 C4.94553994,13.8125559 4.37746707,13.8774308 4.06710397,14.2678211 C4.06471678,14.2708238 4.06234874,14.2738418 4.06,14.2768747 L4.06,14.2768747 C3.75257288,14.6738539 3.82516916,15.244888 4.22214834,15.5523151 C4.22358765,15.5534297 4.2250303,15.55454 4.22647627,15.555646 L11.0872776,20.8031356 C11.6250734,21.2144692 12.371757,21.2145375 12.909628,20.8033023 L19.7677785,15.559828 C20.1693192,15.2528257 20.2459576,14.6784381 19.9389553,14.2768974 C19.9376429,14.2751809 19.9363245,14.2734691 19.935,14.2717619 L19.935,14.2717619 C19.6266937,13.8743807 19.0546209,13.8021712 18.6572397,14.1104775 C18.654352,14.112718 18.6514778,14.1149757 18.6486172,14.1172508 L12.9235044,18.6705218 C12.377022,19.1051477 11.6029199,19.1052208 11.0563554,18.6706981 Z" fill="#000000" opacity="0.3" />
+                             </g>
+                         </svg></span><span class="kt-menu__link-text">Dashboard</span></a>
+             </li>
+
+             <li class="kt-menu__item  kt-menu__item--submenu" aria-haspopup="true" data-ktmenu-submenu-toggle="hover"><a href={{asset('javascript:;')}} class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-icon"><i class="fas fa-lock"></i></span><span class="kt-menu__link-text">Projects</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                 <div class="kt-menu__submenu "><span class="kt-menu__arrow"></span>
+                     <ul class="kt-menu__subnav">
+                         <li class="kt-menu__item  kt-menu__item--parent" aria-haspopup="true"><span class="kt-menu__link"><span class="kt-menu__link-text">Projects</span></span></li>
+                         <li class="kt-menu__item  kt-menu__item--submenu" aria-haspopup="true" data-ktmenu-submenu-toggle="hover"><a href={{route('admin.projects.index')}} class="kt-menu__link kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--line"><span></span></i><span class="kt-menu__link-text">All Projects</span></a>
                          </li>
+                         <li class="kt-menu__item  kt-menu__item--submenu" aria-haspopup="true" data-ktmenu-submenu-toggle="hover"><a href={{route('admin.projects.create')}} class="kt-menu__link kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--line"><span></span></i><span class="kt-menu__link-text">Add New Project</span></a>
+                         </li>
+
+
                      </ul>
-                 </li>
-             </ul>
-         </li>
-         <li>
-             <a href="{{asset('https://codervent.com/skodash/documentation/index.html')}}" target="_blank">
-                 <div class="parent-icon"><i class="bi bi-file-code-fill"></i>
                  </div>
-                 <div class="menu-title">Documentation</div>
-             </a>
-         </li>
-         <li>
-             <a href="{{asset('https://themeforest.net/user/codervent')}}" target="_blank">
-                 <div class="parent-icon"><i class="bi bi-telephone-fill"></i>
+             </li>
+
+             <li class="kt-menu__item  kt-menu__item--submenu" aria-haspopup="true" data-ktmenu-submenu-toggle="hover"><a href={{asset('javascript:;')}} class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-icon"><i class="fas fa-lock"></i></span><span class="kt-menu__link-text">Roles</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                 <div class="kt-menu__submenu "><span class="kt-menu__arrow"></span>
+                     <ul class="kt-menu__subnav">
+                         <li class="kt-menu__item  kt-menu__item--parent" aria-haspopup="true"><span class="kt-menu__link"><span class="kt-menu__link-text">Roles</span></span></li>
+                         <li class="kt-menu__item  kt-menu__item--submenu" aria-haspopup="true" data-ktmenu-submenu-toggle="hover"><a href={{route('admin.roles.index')}} class="kt-menu__link kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--line"><span></span></i><span class="kt-menu__link-text">All Roles</span></a>
+                         </li>
+                         <li class="kt-menu__item  kt-menu__item--submenu" aria-haspopup="true" data-ktmenu-submenu-toggle="hover"><a href={{route('admin.roles.create')}} class="kt-menu__link kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--line"><span></span></i><span class="kt-menu__link-text">Add New Project</span></a>
+                         </li>
+
+
+                     </ul>
                  </div>
-                 <div class="menu-title">Support</div>
-             </a>
-         </li>
-     </ul>
-     <!--end navigation-->
- </aside>
- <!--end sidebar -->
+             </li>
+
+             <li class="kt-menu__item  kt-menu__item--submenu" aria-haspopup="true" data-ktmenu-submenu-toggle="hover"><a href={{asset('javascript:;')}} class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
+                             <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                 <rect x="0" y="0" width="24" height="24" />
+                                 <rect fill="#000000" x="4" y="4" width="7" height="7" rx="1.5" />
+                                 <path d="M5.5,13 L9.5,13 C10.3284271,13 11,13.6715729 11,14.5 L11,18.5 C11,19.3284271 10.3284271,20 9.5,20 L5.5,20 C4.67157288,20 4,19.3284271 4,18.5 L4,14.5 C4,13.6715729 4.67157288,13 5.5,13 Z M14.5,4 L18.5,4 C19.3284271,4 20,4.67157288 20,5.5 L20,9.5 C20,10.3284271 19.3284271,11 18.5,11 L14.5,11 C13.6715729,11 13,10.3284271 13,9.5 L13,5.5 C13,4.67157288 13.6715729,4 14.5,4 Z M14.5,13 L18.5,13 C19.3284271,13 20,13.6715729 20,14.5 L20,18.5 C20,19.3284271 19.3284271,20 18.5,20 L14.5,20 C13.6715729,20 13,19.3284271 13,18.5 L13,14.5 C13,13.6715729 13.6715729,13 14.5,13 Z" fill="#000000" opacity="0.3" />
+                             </g>
+                         </svg></span><span class="kt-menu__link-text">Applications</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                 <div class="kt-menu__submenu "><span class="kt-menu__arrow"></span>
+                     <ul class="kt-menu__subnav">
+                         <li class="kt-menu__item  kt-menu__item--parent" aria-haspopup="true"><span class="kt-menu__link"><span class="kt-menu__link-text">Applications</span></span></li>
+                         <li class="kt-menu__item  kt-menu__item--submenu" aria-haspopup="true" data-ktmenu-submenu-toggle="hover"><a href={{asset('javascript:;')}} class="kt-menu__link kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--line"><span></span></i><span class="kt-menu__link-text">Users</span></a>
+                         </li>
+                         <li class="kt-menu__item  kt-menu__item--submenu" aria-haspopup="true" data-ktmenu-submenu-toggle="hover"><a href={{asset('javascript:;')}} class="kt-menu__link kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--line"><span></span></i><span class="kt-menu__link-text">Users</span></a>
+                         </li>
+
+
+                     </ul>
+                 </div>
+             </li>
+
+
+
+         </ul>
+     </div>
+ </div>

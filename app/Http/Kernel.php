@@ -2,6 +2,8 @@
 
 namespace App\Http;
 
+use App\Http\Middleware\CheckAuthGuard;
+use App\Http\Middleware\EmailVerifiedByGuard;
 use App\Http\Middleware\IsAdmin;
 use App\Http\Middleware\IsFreelancer;
 use App\Http\Middleware\IsUser;
@@ -70,5 +72,7 @@ class Kernel extends HttpKernel
          'auth_admin'=>IsAdmin::class,
          'auth_freelancer'=>IsFreelancer::class,
          'auth_user'=>IsUser::class,
+        'auth'=>CheckAuthGuard::class,
+        'verified.guard'=>EmailVerifiedByGuard::class,
     ];
 }

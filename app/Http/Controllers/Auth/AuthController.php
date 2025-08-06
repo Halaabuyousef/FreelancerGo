@@ -28,7 +28,7 @@ class AuthController extends Controller
         ]);
 
         if (Auth::guard($guard)->attempt($data, $request->filled('remember'))) {
-            return redirect()->route("{$guard}.dashboard");
+            return redirect()->route($guard . '.dashboard');
         }
         return redirect()->back();
     }
@@ -69,7 +69,7 @@ class AuthController extends Controller
     function dashboard(Request $request)
     {
         $guard = $request->route('guard');
-        return view($guard . '.index');
+        return view($guard . '.dashboard');
     }
 
 }

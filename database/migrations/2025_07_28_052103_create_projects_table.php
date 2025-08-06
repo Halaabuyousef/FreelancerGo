@@ -15,8 +15,9 @@ return new class extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
             $table->string('title');
+            $table->string('image');
             $table->text('description');
-            $table->decimal('budget', 10, 2)->nullable();
+            $table->double('price', 10, 2);
             $table->string('duration')->nullable();
             $table->date('deadline')->nullable();
             $table->enum('status', ['open', 'in_progress', 'completed', 'cancelled'])->default('open');
